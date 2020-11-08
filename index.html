@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Movie Plots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Get Movie Plots!</h1>
+    </header>
+    <main>
+        <section class="query">
+            <form>
+            <label class="movie">Movie to search for:</label>
+                <input class="movie" id="js-movie" type="textarea" required>
+                <br>
+            <label class="plot-type">Length of Plot:</label>
+                <select class="plot-type" id="js-plot-length" required>
+                    <option value="Short">Short</option>
+                    <option value="Full">Full</option>
+                </select>
+                <br>
+                <input type="submit" id="button" value="Find">
+            </form>
+            <p id="js-error-message" class="error-message"></p>
+        </section>
+        <section id="results" class="hidden">
+            <h2 class="results-head">Results</h2>
+            <ul id="results-list"></ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+</body>
+</html>

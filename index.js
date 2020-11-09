@@ -1,4 +1,4 @@
-const searchURL = `http://www.omdbapi.com/?apikey=`
+const searchURL = `https://www.omdbapi.com/?apikey=`
 const apiKEY = "a5f1f287"
 
 function displayResults(responseJson) {
